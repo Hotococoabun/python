@@ -13,8 +13,6 @@ def ip138(number):
     t = etree.HTML(r.text)
     data = t.xpath("//tr[@class='tdc' and @bgcolor]")[1:]
     s = 'ip138:\n'
-    # print (len(data))
-    # print (r.text)
     for x in data:
         text = x.xpath('./td/text()')
         s += text[0] + ' : ' + text[1] + '\n'
