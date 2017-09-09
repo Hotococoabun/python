@@ -21,8 +21,6 @@ def ip138(number):
     return s + '\n'
 
 
-    #print(r.text)
-
 def supfree(number):
     '''shouji.supfree.net'''
     r = requests.get('http://shouji.supfree.net/fish.asp?cat='+str(number))
